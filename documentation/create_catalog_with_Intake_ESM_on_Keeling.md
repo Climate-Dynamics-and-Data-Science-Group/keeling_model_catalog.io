@@ -5,7 +5,7 @@ This tutorial will demonstrate how to create a catalog in the form of a pandas t
 Links to the sample Jupyter Notebook: 
 
 - CESM2: (Coming Soon)
-- CMIP6: ../tutorials/create_catalog_cmip6.ipynb 
+- CMIP6: (../tutorials/create_catalog_cmip6.ipynb)
 
 >Make sure you are referring to the correct notebook when building the catalog. 
 
