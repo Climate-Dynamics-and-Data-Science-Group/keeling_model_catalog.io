@@ -4,7 +4,7 @@ This tutorial is applicable to downloading both CMIP5 and CMIP6 model output, an
 
 This is aimed to serve as a quick guide to download global model output. For any other questions, please see the [detailed ESGF guide](https://esgf.github.io/esgf-user-support/user_guide.html?highlight=open%20id), or reach out to fellow folks working with CMIP output (at UIUC or the developers at LLNL). Please take any suggestions provided in this guide as a grain of salt. 
 
-![main_1](https://drive.google.com/file/d/1x92J5CLCTGkK4QHlga_ly2u_62SsqRNl/view?usp=share_link)
+![main_1](../images/main_1.png)
 
 --------
 
