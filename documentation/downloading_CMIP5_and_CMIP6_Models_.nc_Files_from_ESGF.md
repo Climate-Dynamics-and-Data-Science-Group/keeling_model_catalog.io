@@ -114,7 +114,7 @@ Once you found the dataset that you want from the results, click '`add to data c
      
      1. Click `show all replicas` under the search bar.
 
-        ![showallreplicas](https://drive.google.com/file/d/19OKGDxNKQXnJWlFKkdToKoe0SIWguu49/view?usp=share_link)
+        ![showallreplicas](../images/showallreplicas.png)
         
         It is possible that the LLNL ESGF node doesn't have the file that you are looking for. By clicking show all replicas, file of the same name from other data nodes like the one in UK (`esgf.ceda.ac.uk`),or AU (`esgf.nci.org.au`) will show. 
         
