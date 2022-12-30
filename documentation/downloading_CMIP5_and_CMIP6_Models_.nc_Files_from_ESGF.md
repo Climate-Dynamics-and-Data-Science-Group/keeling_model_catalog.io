@@ -219,7 +219,7 @@ Once you found the dataset(s) you needed, you can proceed to download the datase
 
     You will get prompted for the OpenID and the Passphrase as seen in the red box. Paste the entire OpenID to the prompt, and type the same password when logging into the WCRP CMIP5/6 search interface. The download will start instantly. The prompt will return `Connected` as underlined in blue to indicate a successful download. 
 
-    ![OpenIDpassphraseprompt](../images/OpenIDpassphraseprompt.png)
+    ![OpenIDpassphraseprompt](../images/openIDpassphraseprompt.png)
 
 
 <br/><br/>
@@ -246,7 +246,7 @@ Once you found the dataset(s) you needed, you can proceed to download the datase
 
     You will then see your Keeling account. Select the file destination on Keeling, then click '`Submit`'.  
 
-    ![globus_keeling_destination](../images/globus_keeling_destination)
+    ![globus_keeling_destination](../images/globus_keeling_destination.png)
 
     If you are on Google Chrome, you may see this page displayed. Simply click `Send Anyways`. 
 
