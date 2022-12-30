@@ -184,11 +184,11 @@ Once you found the dataset(s) you needed, you can proceed to download the datase
 
 - Since CMIP5 datasets have all variables bundled together, downloading the entire datasets takes up a lot of memory. Out of the multiple variables, you may only need to use a few. 
 
-    ![datacart_cmip5](https://drive.google.com/file/d/13EzeVpw1VBLoGLpDIPXole3R3N7FjA7U/view?usp=share_link)
+    ![datacart_cmip5](../images/datacart_cmip5.png)
 
     Now that there is only CMIP5 datasets in your data cart, you can select the variables to download by typing the variable names in the box on the upper right and click apply as shown in the red box. 
 
-    ![datacart_cmip5_withsearchapplied](https://drive.google.com/file/d/1VDuGO33bxKAaVpxQnXiItK-yjL9VGjPr/view?usp=share_link)
+    ![datacart_cmip5_withsearchapplied](../images/datacart_cmip5_withsearchapplied.png)
 
 
     In this example, `ts`,`hur`, `uas` and `vas` are selected to download. To check whether the filter is applied, click '`Show Files`' to see if the number of files under the dataset has changed: Only 4 files under the `MPI-ESM-LR` dataset and 7 files from `MRI-CGCM3` will be downloaded, instead of the total 53 and 83 files.
@@ -205,11 +205,11 @@ Once you found the dataset(s) you needed, you can proceed to download the datase
 
     Click '`Select All Datasets`', then click '`WGET Script`' under '`Collective Services for All Selected Datasets`'. You will see links to download the WGET script. The number of script links depends on the amount of nodes the datasets are downloaded from. In this example, not all datasets are available in the LLNL-ESGF node, and replicas from the AU and UK nodes are selected. Therefore, datasets will be acquired from all LLNL-ESGF, AU-ESGF and UK-ESGF nodes, so we'll need to download total of three scripts. 
     
-    ![wgetscripts](https://drive.google.com/file/d/1Ru_GOta6a7S_oqNzIBUNxhRHvsYxXjV2/view?usp=share_link)
+    ![wgetscripts](../images/wgetscripts.png)
 
     When you click the link, you may see the information not secure page. Click '`Send anyways`'. 
 
-    ![notsecure](https://drive.google.com/file/d/1pRGMKIFt17DMRKQfpvwzwVASzTupHQJ3/view?usp=share_link)
+    ![notsecure](../images/notsecure.png)
 
     The bash script will be downloaded to your local computer. Use `scp` to copy/transfer the script to your targetted file destination on Keeling. Run the script as follow, where `wget-20221226003827.sh` is the script name.
 
@@ -219,7 +219,7 @@ Once you found the dataset(s) you needed, you can proceed to download the datase
 
     You will get prompted for the OpenID and the Passphrase as seen in the red box. Paste the entire OpenID to the prompt, and type the same password when logging into the WCRP CMIP5/6 search interface. The download will start instantly. The prompt will return `Connected` as underlined in blue to indicate a successful download. 
 
-    ![OpenIDpassphraseprompt](https://drive.google.com/file/d/1CZa-2_RlthBmBZBNHxe2N8fTjhJX7hoM/view?usp=share_link)
+    ![OpenIDpassphraseprompt](../images/OpenIDpassphraseprompt.png)
 
 
 <br/><br/>
@@ -227,34 +227,34 @@ Once you found the dataset(s) you needed, you can proceed to download the datase
     
     *Not all files has the Globus Download Option. 
 
-    ![globusdownload](https://drive.google.com/file/d/1rcxcpBjDhG2pNZyspyWU0hsjC-MJzqA0/view?usp=share_link)
+    ![globusdownload](../images/globusdownload.png)
 
     Under the `Full Dataset Service`, select `Globus Download`. You will get redirected to a page that lists all the Globus paths of the files. 
 
-    ![globusdownload_options](https://drive.google.com/file/d/1z4cZtG8x68fm5UQjErJOTsRs-Pb5ai27/view?usp=share_link)
+    ![globusdownload_options](../images/globusdownload_options.png)
 
     There are two options to download the files with the Globus method. 
     
     **I. Website Method**
     Once you click `Start Web Download`, you will get redirected to the Globus file manager. Login with your .illinois account credentials.
 
-    ![globusfilemanager_login](https://drive.google.com/file/d/1FJTYLfcIdKNoMMAWucsLtRNnl1-UKLhz/view?usp=share_link)
+    ![globusfilemanager_login](../images/globusfilemanager_login.png)
 
     Once you reach the Globus file manager dashboard, click the `Search` box in Collection, and then select `sese#keeling-dtn`. 
 
-    ![globus_keeling](https://drive.google.com/file/d/1e2vRKYMT2in9rVeHsiCCH2Uj2h9xVtCC/view?usp=share_link)
+    ![globus_keeling](../images/globus_keeling.png)
 
     You will then see your Keeling account. Select the file destination on Keeling, then click '`Submit`'.  
 
-    ![globus_keeling_destination](https://drive.google.com/file/d/16tzIeYUa4PHrlC2j_YtQ3bNZxXWZR4tl/view?usp=share_link)
+    ![globus_keeling_destination](../images/globus_keeling_destination)
 
     If you are on Google Chrome, you may see this page displayed. Simply click `Send Anyways`. 
 
-    ![notsecure](https://drive.google.com/file/d/1pRGMKIFt17DMRKQfpvwzwVASzTupHQJ3/view?usp=share_link)
+    ![notsecure](../images/notsecure.png)
 
     You will get redirected to the WCRP ESGF page once the transfer is done with the following confirmation message shown. You may also receive an email from Globus confirming the download task. 
 
-    ![globusconfirmation](https://drive.google.com/file/d/1aadU04i_s34tXYNxPtJbIkjZDjhLNrvJ/view?usp=share_link)
+    ![globusconfirmation](../images/globusconfirmation.png)
 
     You should be able to see the files in your destination folder on Keeling. 
 
@@ -272,7 +272,7 @@ Once you found the dataset(s) you needed, you can proceed to download the datase
     
     In the Dataset listing, select `List Files` from `Full Dataset Services`. This should expand the full list of `.nc` files under the dataset. On the right hand side of the file listing, there are multiple links under `Single File Access`.  
 
-    ![httpdownload](https://drive.google.com/file/d/12RNb6Zq5J32Kn9c5J9avyV9lP-tQMDVF/view?usp=share_link)
+    ![httpdownload](../images/httpdownload.png)
 
     Click HTTP Download, and the file should be downloaded to your local computer. Use `scp` to upload the file to Keeling from your local terminal.
     
