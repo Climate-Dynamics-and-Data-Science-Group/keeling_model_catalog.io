@@ -27,7 +27,7 @@ Create a new profile if you don't already have one by filling out all boxes that
 
 ## Step 1: Login to ESGF Node
 To log in, click 'Login' on the upper right corner, and you should reach a page that requests your Open ID. 
-![LoginOpenID](https://drive.google.com/file/d/1tUkmf0qgsBmkGh5e9oliWV0Nx5ji6cXy/view?usp=share_link)
+![LoginOpenID](../images/LoginOpenID.png)
 
 Once you input your openID, you will get redirected to this page that asks for your username and password (either one of the following). The username is embedded as part of your OpenID (`helloworld` from the above example).
 
