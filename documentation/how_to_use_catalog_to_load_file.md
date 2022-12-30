@@ -13,7 +13,7 @@ You should be able to access the catalogs nested in `/data/keeling/a/cristi` dir
 - Knowledge about CMIP6 output and what the search keys are referring to**
 
 <font size = 1.7> *Highly recommend using Xarray to deal with large datasets like global climate model output; but other packages would also work.  
-** Check out [Step 2 in the Downloading CMIP5 and CMIP6 Models. nc Files page](https://drive.google.com/file/d/1nslXk00DzEBE2rA3cxdy0kU-0XZXFal_/view?usp=share_link) for more details. 
+** Check out [Step 2 in the Downloading CMIP5 and CMIP6 Models. nc Files page](downloading_CMIP5_and_CMIP6_Models_.nc_Files_from_ESGF.md) for more details. 
 
 <font size=2> 
 
@@ -76,7 +76,7 @@ This step is self-explanatory: `open_mfdataset` is called to read the files.
 ### **Note: Error will rise when have Multiple Models in `path`**
 It will be awesome if we can simply include all models' filepaths and read as a single dataset. However, life is hard: Models have different time coordinates, such as `cftime.Datetime360Day()` from `cftime` and `datetime64` from `NumPy`. You will run into the following error if you try to load multiple model output for a single variable altogether. 
 
-![diff_timecoords_error](https://drive.google.com/file/d/1PrNDGqpSGdLvMDU7Lxoc-2iHP9sAKCLH/view?usp=share_link)
+![diff_timecoords_error](../images/diff_timecoords_error.png)
 
 It is unclear whether there is a certain preferred time coordinates. So the simplest practice is to **read output files for a single model and variable one at a time**. You can change the time coordinates for each model, and then merge them together as a single dataset. 
 
