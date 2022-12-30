@@ -42,7 +42,7 @@ You will get redirected to the homepage of ESGF once you successfully logged in.
 ## Step 2: Use the filters on the left panel to get all your files
 
 >If you are at the homepage of the ESGF node, click `'More search options'` to get to the page where the magic happens. 
-![magicalpage_noncmip6wcrp](https://drive.google.com/file/d/1M8kKKZKDuMyKbCxehuQVoVCdgDhReN6d/view?usp=share_link)
+![magicalpage_noncmip6wcrp](../images/magicalpage_noncmip6wcrp.png)
 
 
 It is hard to pinpoint the specific filenames of the specific models/experiments/realizations. Thus, we will narrow down our search through selecting the conditions that we want.
