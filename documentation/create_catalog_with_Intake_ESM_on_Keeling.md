@@ -44,7 +44,7 @@ Go to the targetted folder through the Terminal:
 **CMIP6**
 
 You should be able to see a similar scene when you reached the `./cmip6/` folder.  
-![cmip6_folder_dir](https://drive.google.com/file/d/1BvdE7XpI4YLU3wfqpUE1yGzMwwJc-c_g/view?usp=share_link)
+![cmip6_folder_dir](../images/cmip6_folder_dir.png)
 
 Run the following line of code: 
     
