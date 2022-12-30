@@ -6,7 +6,7 @@ This is aimed to serve as a quick guide to download global model output. For any
 
 
 ## Workflow of Dowloading CMIP model datasets from ESGF nodes 
-![esgfdownloadworkflow](https://drive.google.com/file/d/1ZumJP2fo0uS4TUenLS16lKzNVbIToNzY/view?usp=share_link)
+![esgfdownloadworkflow](../images/esgfdownloadworkflow.png)
 
 1. **Login to ESGF-LLNL Node.**
     
