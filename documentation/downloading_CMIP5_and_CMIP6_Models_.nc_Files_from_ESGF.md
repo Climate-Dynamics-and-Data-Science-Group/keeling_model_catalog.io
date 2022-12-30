@@ -17,7 +17,7 @@ It is required to have an account at ESGF to start downloading files. To access 
 
 Create a new profile if you don't already have one by filling out all boxes that are bolded. 
 
-![CreateProfile](https://drive.google.com/file/d/1D-tiXCwjrP5H70z28zLkcpWvWF6bYM7R/view?usp=share_link)
+![CreateProfile](../images/CreateProfile.png)
 
 >**Important:** Remember to record Open ID, as it will be used for ESGF account future log-ins and authentication when downloading the data. 
 
@@ -31,9 +31,9 @@ To log in, click 'Login' on the upper right corner, and you should reach a page 
 
 Once you input your openID, you will get redirected to this page that asks for your username and password (either one of the following). The username is embedded as part of your OpenID (`helloworld` from the above example).
 
-![PostOpenIDLogin_1](https://drive.google.com/file/d/1fGkAswb6LnHr5F8bQEifi9_D_w3Et7Gb/view?usp=share_link)
+![PostOpenIDLogin_1](../images/postopenidlogin_1.png)
 
-![PostOpenIDLogin_2](https://drive.google.com/file/d/1P-Qfq-x1_f4Uc7269TgL04AU6KgiCl6r/view?usp=share_link)
+![PostOpenIDLogin_2](../images/postopenidlogin_2.png)
 
 You will get redirected to the homepage of ESGF once you successfully logged in. 
 
