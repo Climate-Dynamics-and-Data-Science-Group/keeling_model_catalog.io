@@ -11,8 +11,6 @@ Links to the sample Jupyter Notebook:
 
 This tutorial is based on the content contributed by professionals who developed intake_esm and ecgtools. Check out more details about what intake_esm is and its additional functions at their websites - [intake_esm](https://intake-esm.readthedocs.io/en/stable/how-to/build-a-catalog-from-timeseries-files.html) and [ecgtools](https://ecgtools.readthedocs.io/en/latest/how-to/use-a-custom-parser.html). 
 
-<br/>
-
 ## Prerequisites
 It is required to have the packages listed as follow installed. 
    
