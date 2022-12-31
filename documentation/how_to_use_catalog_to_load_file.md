@@ -17,7 +17,6 @@ You should be able to access the catalogs nested in `/data/keeling/a/cristi` dir
 
 <font size=2> 
 
-<br/><br/>
 ## Introduction 
 Your goal will be to load either CESM2 or CMIP6 files available on Cristi's `/a/` folder. With the catalog that listed all files, we want to 
     
@@ -27,14 +26,12 @@ Your goal will be to load either CESM2 or CMIP6 files available on Cristi's `/a/
 
 Link to the sample Jupyter Notebook: (add link to sample notebook here -> how can I make a jupyter notebook for view only?)
 
-<br/><br/>
 ## Step 0: Start a Jupyter Notebook and import required packages 
 This will be the notebook that you work with the model data. You will be needing `pandas` to **read and search within the catalog**, and `xarray` to view content of the `.nc` files. 
 
     import pandas as pd
     import xarray as xr
 
-<br/><br/>
 ## Step 1: Load the Catalog 
     cmip6=pd.read_csv('cmip6_catalog.csv')
 
@@ -42,7 +39,6 @@ Here, variable `cmip6` is now a pandas dataframe that contains all the informati
 
 We name the catalogs as '`cesm2_catalog.csv`' and '`cmip6_catalog.csv`' respectively. You can switch out '`cmip6_catalog.csv`' to '`cesm...`' to access the CESM2-output catalog. 
 
-<br/><br/>
 ## Step 2: Search within the Catalog: 
     path=a.loc[(a['variable_id']=='hur')&  
            (a['experiment']=='AMIP')& 
@@ -63,7 +59,6 @@ These are the common search keys (i.e. pandas dataframe columns) you will use. H
 
 After narrowing down the range to all AMIP experiment relative humidity files from the GFDL models in this example, we will get the filepaths of those chosen files by calling `['path']`. We will have to change the object type to `list` instead of a `numpy array` before reading the files with Xarray. 
 
-<br/><br/>
 ## Step 3: Read the Files 
     ds = xr.open_mfdataset(path,combine="by_coords")
 
