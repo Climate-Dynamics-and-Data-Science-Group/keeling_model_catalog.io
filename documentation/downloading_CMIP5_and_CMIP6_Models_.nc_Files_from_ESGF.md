@@ -69,8 +69,6 @@ If you are downloading a single `.nc` file, see Step 3.
 
 Once you found the dataset that you want from the results, click '`add to data cart`' if you are downloading multiple files. 
 
-
-
 <br/><br/>
 
 ## FAQ and Tips when narrowing down files to download: 
@@ -178,7 +176,6 @@ Once you found the dataset that you want from the results, click '`add to data c
 Once you found the dataset(s) you needed, you can proceed to download the dataset. 
 
 ## 0. (CMIP5-WGET Script Method Only) Filter Variables 
-<br/>
 
 > Make sure there is only CMIP5 or CMIP6 datasets in your Data Cart. Although CMIP5 and CMIP6 have different search interface, they share the same Data Cart.
 
@@ -192,8 +189,6 @@ Once you found the dataset(s) you needed, you can proceed to download the datase
 
 
     In this example, `ts`,`hur`, `uas` and `vas` are selected to download. To check whether the filter is applied, click '`Show Files`' to see if the number of files under the dataset has changed: Only 4 files under the `MPI-ESM-LR` dataset and 7 files from `MRI-CGCM3` will be downloaded, instead of the total 53 and 83 files.
-
-<br/><br/>
 
 ## 1. Downloading Batch of Datasets
 
@@ -221,8 +216,6 @@ Once you found the dataset(s) you needed, you can proceed to download the datase
 
     ![OpenIDpassphraseprompt](../images/openIDpassphraseprompt.png)
 
-
-<br/><br/>
 - **Method 1b: Globus Download to Keeling** 
     
     *Not all files has the Globus Download Option. 
@@ -261,8 +254,6 @@ Once you found the dataset(s) you needed, you can proceed to download the datase
     **II. Download Python Script**
     
     Click '`Start Script Download`' in Option 2. The `.py` will then download to your local computer. Similar to `WGET Script`, upload the python script to Keeling and run it as a regular python script. Then use `mv` to move the files to the destined folder. 
-
-<br/><br/>
 
 ## 2. Downloading a Single Variable `.nc` File
 > If you are trying to download a single variable, but the number of files != 1, it is highly recommended to use the methods mentioned in `1. Downloading multiple datasets`. 
