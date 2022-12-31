@@ -6,7 +6,7 @@ You should be able to access the catalogs nested in `/data/keeling/a/cristi` dir
 
 - CESM2-catalog: ``
 
-- CMIP6-catalog: ``
+- CMIP6-catalog: `/data/keeling/a/cristi/a/data/cmip6`
 
 **Prerequsites for the use of the catalog:** 
 - Basic knowledge of Pandas and Xarray* 
