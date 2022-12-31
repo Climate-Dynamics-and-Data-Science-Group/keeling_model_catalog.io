@@ -45,7 +45,6 @@ Here, variable `cmip6` is now a pandas dataframe that contains all the informati
 
 We name the catalogs as '`cesm2_catalog.csv`' and '`cmip6_catalog.csv`' respectively. You can switch out '`cmip6_catalog.csv`' to '`cesm...`' to access the CESM2-output catalog. 
 
-
 ## Step 2: Search within the Catalog: 
     path=a.loc[(a['variable_id']=='hur')&  
            (a['experiment']=='AMIP')& 
