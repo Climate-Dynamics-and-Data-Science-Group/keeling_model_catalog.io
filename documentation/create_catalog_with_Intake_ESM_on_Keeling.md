@@ -31,7 +31,7 @@ It is required to have the packages listed as follow installed.
 The main goal of doing this step is to update the existing catalog with the newly downloaded files that are rearranged in the organized folders (e.g. `./cmip6/` and `./cesm2/`). It is most likely that there are new folders created to store the newly downloaded datasets, for example, model output for a new member of an exisiting model is downloaded; or, datasets of a new model is downloaded. 
 
 Therefore, we would have to 
-1. Get the most recent list of all subdirections in the main folder (`cesm2` or `cmip6`)
+1. Get the most recent list of all subdirectories in the main folder (`cesm2` or `cmip6`)
 2. Load the list into a Jupyter Notebook 
 3. Create the Catalog Builder and Build the Catalog 
 4. Check and Save the new catalog 
