@@ -7,6 +7,8 @@
 
 [Jupyer Notebook Tutorial: Creating a Catalog for CMIP6 output](tutorials/create_catalog_cmip6.ipynb)
 
+[Jupyter Notebook Tutorial: Creating a Catalog for CESM output](tutorials/create_catalog_cesm.ipynb)
+
 ### Downloading model data
 
 [Downloading CMIP5 and CMIP6 Models .nc Files from ESGF (in depth)](documentation/downloading_CMIP5_and_CMIP6_Models_.nc_Files_from_ESGF.md)
