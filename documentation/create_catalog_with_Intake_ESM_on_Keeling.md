@@ -4,7 +4,7 @@ This tutorial will demonstrate how to create a catalog in the form of a pandas t
 
 Links to the sample Jupyter Notebook: 
 
-- CESM2: (Coming Soon)
+- CESM: [Here](../tutorials/create_catalog_cesm.ipynb)
 - CMIP6: [Here](../tutorials/create_catalog_cmip6.ipynb)
 
 >Make sure you are referring to the correct notebook when building the catalog. 
@@ -26,18 +26,18 @@ It is required to have the packages listed as follow installed.
 - Install [`intake`](https://intake-esm.readthedocs.io/en/stable/how-to/install-intake-esm.html)
 
 ## Introduction 
-The main goal of doing this step is to update the existing catalog with the newly downloaded files that are rearranged in the organized folders (e.g. `./cmip6/` and `./cesm2/`). It is most likely that there are new folders created to store the newly downloaded datasets, for example, model output for a new member of an exisiting model is downloaded; or, datasets of a new model is downloaded. 
+The main goal of doing this step is to update the existing catalog with the newly downloaded files that are rearranged in the organized folders (e.g. `./cmip6/` and `./cesm/`). It is most likely that there are new folders created to store the newly downloaded datasets, for example, model output for a new member of an exisiting model is downloaded; or, datasets of a new model is downloaded. 
 
 Therefore, we would have to 
-1. Get the most recent list of all subdirectories in the main folder (`cesm2` or `cmip6`)
+1. Get the most recent list of all subdirectories in the main folder (`cesm` or `cmip6`)
 2. Load the list into a Jupyter Notebook 
 3. Create the Catalog Builder and Build the Catalog 
 4. Check and Save the new catalog 
 
 ## Step 0: Get Updated List of Subdirectories 
 Go to the targetted folder through the Terminal: 
-- If you need to update the **CMIP6** catalog, go to `/data/keeling/a/cristi/a/data/cmip6`. 
-- If you are updating the **CESM2** catalog, go to `/data/keeling/a/cristi/a/data/cesm2`. 
+- If you need to update the **CMIP6** catalog, go to `/data/keeling/a/cristi/a/esm_data/cmip6`. 
+- If you are updating the **CESM** catalog, go to `/data/keeling/a/cristi/a/esm_data/cesm`. 
 
 **CMIP6**
 
@@ -54,13 +54,13 @@ This is a nested code, where all subdirectories (all members within the model fo
 
 (To be updated)
 
-## Step 1: Load List of all Subdirectories in `./cesm2` or `./cmip6`
+## Step 1: Load List of all Subdirectories in `./cesm` or `./cmip6`
 
-    filepathlist = pd.read_csv('/data/keeling/a/cristi/a/data/cmip6/subdir_list.csv',header=None,names=['dirpaths']).values.tolist()
+    filepathlist = pd.read_csv('/data/keeling/a/cristi/a/esm_data/cmip6/subdir_list.csv',header=None,names=['dirpaths']).values.tolist()
     
     filepath=list(itertools.chain.from_iterable(filepathlist))
 
-> Change the filepath `./cmip6/...` to `./cesm2/...` for reading the subdirectory list file for CESM2. 
+> Change the filepath `./cmip6/...` to `./cesm/...` for reading the subdirectory list file for CESM2. 
 
 We load the `.csv` file from step 0 into the Jupyter Notebook and get all the directory paths. Since it is a pandas object, we need to change it as a list. After the first line of code, we will get a list of lists; therefore, the second line combines the list of lists and return a list with strings of directory paths. 
 
@@ -94,13 +94,13 @@ The run time for this step may be long, especially for the CMIP6 catalog, due to
 
 The variable `catalog` is a `ecgtools.builder.Builder` object. To view the content, we add `.df` to read it as a dataframe. 
 
-    catalog.df.to_csv('/data/keeling/a/cristi/a/data/cmip6_catalog.csv', index=False)
+    catalog.df.to_csv('/data/keeling/a/cristi/a/esm_data/cmip6_catalog.csv', index=False)
 
 `index=False` is required to avoid an additional column of index when loading the catalog. 
 
 The path for saving the catalogs is as follow: 
 
-    /data/keeling/a/cristi/a/data/
+    /data/keeling/a/cristi/a/esm_data/
 
 
 And now you are done! 
