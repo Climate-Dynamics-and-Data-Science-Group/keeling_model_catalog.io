@@ -4,9 +4,9 @@ This tutorial is specifically for users who will use the File Catalog for either
 
 You should be able to access the catalogs nested in `/data/keeling/a/cristi` directory, but the full path are as follow: 
 
-- CESM2-catalog: ``
+- CESM2-catalog: `/data/keeling/a/cristi/a/esm_data/cesm`
 
-- CMIP6-catalog: `/data/keeling/a/cristi/a/data/cmip6`
+- CMIP6-catalog: `/data/keeling/a/cristi/a/esm_data/cmip6`
 
 **Prerequsites for the use of the catalog:** 
 - Basic knowledge of Pandas and Xarray* 
@@ -18,7 +18,7 @@ You should be able to access the catalogs nested in `/data/keeling/a/cristi` dir
 <font size=2> 
 
 ## Introduction 
-Your goal will be to load either CESM2 or CMIP6 files available on Cristi's `/a/` folder. With the catalog that listed all files, we want to 
+Your goal will be to load either CESM or CMIP6 files available on Cristi's `/a/` folder. With the catalog that listed all files, we want to 
     
 1. Pinpoint our range of files
 2. Get their filepaths, and 
@@ -35,7 +35,7 @@ This will be the notebook that you work with the model data. You will be needing
 ## Step 1: Load the Catalog 
     cmip6=pd.read_csv('cmip6_catalog.csv')
 
-Here, variable `cmip6` is now a pandas dataframe that contains all the information accessed from all CMIP6 files available in the `.../cristi/a/data/cmip6` folder. 
+Here, variable `cmip6` is now a pandas dataframe that contains all the information accessed from all CMIP6 files available in the `.../cristi/a/esm_data/cmip6` folder. 
 
 We name the catalogs as '`cesm2_catalog.csv`' and '`cmip6_catalog.csv`' respectively. You can switch out '`cmip6_catalog.csv`' to '`cesm...`' to access the CESM2-output catalog. 
 
