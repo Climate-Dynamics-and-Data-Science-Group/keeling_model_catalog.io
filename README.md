@@ -1,6 +1,6 @@
 # keeling_model_catalog.io
 
-## This is a series of tutorials on using CMIP5, CMIP6, and CESM-LE data on Keeling!
+## This is a series of tutorials on using CMIP6 and CESM data on Keeling!
 
 ### Creating a catalog
 [Creating a Catalog of Model Files on Keeling with Intake-ESM](documentation/create_catalog_with_Intake_ESM_on_Keeling.md)
