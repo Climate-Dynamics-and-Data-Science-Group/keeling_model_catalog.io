@@ -8,7 +8,7 @@ You will be downloading the files to the following directory (referred as `path`
 
 , where organized model output are located at (referred as `rootpath`): 
 
-    /data/keeling/a/cristi/a/data/cmip6
+    /data/keeling/a/cristi/a/esm_data/cmip6
 
 You do not need to do the organizing manually, as the notebook will sort files in the `data_tmp` folder automatically. In other words, the `data_tmp` folder should only contain `.nc` files. 
 
