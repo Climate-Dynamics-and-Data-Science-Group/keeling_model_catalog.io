@@ -1,6 +1,16 @@
 # Create a Catalog of Model Files on Keeling with Intake-ESM
 
-This tutorial will demonstrate how to create a catalog in the form of a pandas table with Jupyter notebook. 
+This tutorial will demonstrate how to create a most up-to-date catalog in the form of a pandas table with Jupyter notebook. To see how to downlaod CMIP model output from ESGF nodes, please see [Downloading CMIP5 and CMIP6 Models .nc Files from ESGF](https://drive.google.com/file/d/1nslXk00DzEBE2rA3cxdy0kU-0XZXFal_/view?usp=share_link). 
+
+You will be downloading the files to the following directory (referred as `path`): 
+
+    /data/keeling/a/cristi/a/data_tmp/cmip6
+
+, where organized model output are located at (referred as `rootpath`): 
+
+    /data/keeling/a/cristi/a/data/cmip6
+
+You do not need to do the organizing manually, as the notebook will sort files in the `data_tmp` folder automatically. In other words, the `data_tmp` folder should only contain `.nc` files. 
 
 Links to the sample Jupyter Notebook: 
 
