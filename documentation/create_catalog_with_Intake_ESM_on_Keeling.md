@@ -36,15 +36,37 @@ It is required to have the packages listed as follow installed.
 - Install [`intake`](https://intake-esm.readthedocs.io/en/stable/how-to/install-intake-esm.html)
 
 ## Introduction 
-The main goal of doing this step is to update the existing catalog with the newly downloaded files that are rearranged in the organized folders (e.g. `./cmip6/` and `./cesm/`). It is most likely that there are new folders created to store the newly downloaded datasets, for example, model output for a new member of an exisiting model is downloaded; or, datasets of a new model is downloaded. 
+The main goal of doing this step is to update the existing catalog with the newly downloaded files that are rearranged in the organized folders (e.g. `./cmip6/` and `./cesm2/`). It is most likely that there are new folders created to store the newly downloaded datasets, for example, model output for a new member of an exisiting model is downloaded; or, datasets of a new model is downloaded. 
 
 Therefore, we would have to 
-1. Get the most recent list of all subdirectories in the main folder (`cesm` or `cmip6`)
+
+0. Organize the newly-downloaded files from the `data_tmp` folder and move them to the `data` folder. 
+1. Get the most recent list of all subdirectories in the root folder (`cesm2` or `cmip6`)
 2. Load the list into a Jupyter Notebook 
 3. Create the Catalog Builder and Build the Catalog 
 4. Check and Save the new catalog 
 
-## Step 0: Get Updated List of Subdirectories 
+## Step 0: Move Files from the `data_tmp` to the `data` Folder
+This step aims to sort all the newly-downloaded model output files in the `data_tmp` folder to follow the structure of the organized `data` folder:
+
+>root path/model/experiment/member
+
+We first define ‘`rootpath`’ and ‘`path`’ as the path of the parent folder to-be-moved-to and the current parent folder of newly downloaded files.
+The underlying assumption when using this tutorial is that, the downloaded files do not exist in the catalog: it may be an additional model, or a new experiment  from one of the existing models, or another member from a model and experiment that is already included in the catalog. These all require making a new folder.
+
+To do so, we loop through all the new files and do the following:
+
+A. Create the path that the file should locate in the organized parent folder
+
+B. Double check if the (model/experiment/member) folders exist
+
+C. Create the folder if the folders do not exist
+
+D. Move the file to the folders
+
+Step A is done using the function `target_location_cmip` , and the indices `2,3,4` of `fname_set` represents the model, experiment and member accessed from the full path of the new files respectively.
+
+## Step 1: Get Updated List of Subdirectories 
 Go to the targetted folder through the Terminal: 
 - If you need to update the **CMIP6** catalog, go to `/data/keeling/a/cristi/a/esm_data/cmip6`. 
 - If you are updating the **CESM** catalog, go to `/data/keeling/a/cristi/a/esm_data/cesm`. 
@@ -64,7 +86,7 @@ This is a nested code, where all subdirectories (all members within the model fo
 
 (To be updated)
 
-## Step 1: Load List of all Subdirectories in `./cesm` or `./cmip6`
+## Step 2: Load List of all Subdirectories in `./cesm` or `./cmip6`
 
     filepathlist = pd.read_csv('/data/keeling/a/cristi/a/esm_data/cmip6/subdir_list.csv',header=None,names=['dirpaths']).values.tolist()
     
@@ -74,7 +96,7 @@ This is a nested code, where all subdirectories (all members within the model fo
 
 We load the `.csv` file from step 0 into the Jupyter Notebook and get all the directory paths. Since it is a pandas object, we need to change it as a list. After the first line of code, we will get a list of lists; therefore, the second line combines the list of lists and return a list with strings of directory paths. 
 
-## Step 2: Create the Catalog Builder and Build the Catalog 
+## Step 3: Create the Catalog Builder and Build the Catalog 
 
     cat_builder = Builder(paths=filepath)
     catalog = cat_builder.build(parsing_func=parse_cmip6)
@@ -98,7 +120,7 @@ These are the exisisting parsing functions. For files other than these types, su
 The run time for this step may be long, especially for the CMIP6 catalog, due to the large amount of files. 
 
 
-## Step 3: Check and Save the Catalog
+## Step 4: Check and Save the Catalog
 
     catalog.df
 
