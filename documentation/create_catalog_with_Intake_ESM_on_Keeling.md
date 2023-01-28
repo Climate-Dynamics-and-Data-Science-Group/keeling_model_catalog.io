@@ -63,6 +63,24 @@ B. Double check if the (model/experiment/member) folders exist
 C. Create the folder if the folders do not exist
 
 D. Move the file to the folders
+    
+    def target_location_cmip(fname,rootpath): #generates target location 
+    if rootpath[-1]!='/':
+        rootpath=rootpath+'/'
+    fname_set=fname.split('_')     
+    location=rootpath+fname_set[2]+'/'+fname_set[3]+'/'+fname_set[4]+'/'    
+    return location
+
+    # move files from current folder to target folders
+    k_moved=0
+    for j in listdir(path): #read all downlaoded files in data_tmp
+        current_dir=os.path.join(path, j) 
+        target_dir= target_location_cmip(j,rootpath)
+        if target_dir!=current_dir:
+            if os.path.exists(target_dir)==False:
+                os.makedirs(target_dir) #make directories 
+            shutil.move(current_dir,target_dir) #move files 
+            k_moved+=1
 
 Step A is done using the function `target_location_cmip` , and the indices `2,3,4` of `fname_set` represents the model, experiment and member accessed from the full path of the new files respectively.
 
