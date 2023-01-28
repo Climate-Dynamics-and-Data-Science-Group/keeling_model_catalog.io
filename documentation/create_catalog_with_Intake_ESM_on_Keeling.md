@@ -44,7 +44,7 @@ Therefore, we would have to
 1. **Get the most recent list of all subdirectories in the root folder (`cesm2` or `cmip6`)**
 2. **Load the list into a Jupyter Notebook**
 3. **Create the Catalog Builder and Build the Catalog**
-4. **Check and Save the new catalog**
+4. **Check and Save the new Catalog**
 
 ## Step 0: Move Files from the `data_tmp` to the `data` Folder
 This step aims to sort all the newly-downloaded model output files in the `data_tmp` folder to follow the structure of the organized `data` folder:
