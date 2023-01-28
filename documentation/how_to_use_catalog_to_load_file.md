@@ -64,7 +64,7 @@ After narrowing down the range to all AMIP experiment relative humidity files fr
 
 This step is self-explanatory: `open_mfdataset` is called to read the files. 
 
-'`combine='by_coords'`' is required when there are more than one files to be read. Using the same example, the AMIP-relative humidity files from GFDL model are broken down into 5-year sections for each `.nc` file within the entire 1979-2014 period, thus a total of 6 files. With `combine='by_coords'`, they will now be concatenated as a single dataset with time coordinates running from 1979 January to 2014 December. 
+'`combine='by_coords'`' is required when there are more than one files to be read. Using the same example, the AMIP-relative humidity files from GFDL model are broken down into 5-year sections for each `.nc` file within the entire 1979-2014 period, thus a total of 6 files. With `combine='by_coords'`, they will now be concatenated as **a single dataset** with time coordinates running from 1979 January to 2014 December. 
 
 ### **Note: Error will rise when have Multiple Models in `path`**
 It will be awesome if we can simply include all models' filepaths and read as a single dataset. However, life is hard: Models have different time coordinates, such as `cftime.Datetime360Day()` from `cftime` and `datetime64` from `NumPy`. You will run into the following error if you try to load multiple model output for a single variable altogether. 
