@@ -40,11 +40,11 @@ The main goal of doing this step is to update the existing catalog with the newl
 
 Therefore, we would have to 
 
-0. **Organize the newly-downloaded files from the `data_tmp` folder and move them to the `data` folder. 
+0. **Organize the newly-downloaded files from the `data_tmp` folder and move them to the `data` folder** 
 1. **Get the most recent list of all subdirectories in the root folder (`cesm2` or `cmip6`)**
-2. **Load the list into a Jupyter Notebook **
-3. **Create the Catalog Builder and Build the Catalog **
-4. **Check and Save the new catalog **
+2. **Load the list into a Jupyter Notebook**
+3. **Create the Catalog Builder and Build the Catalog**
+4. **Check and Save the new catalog**
 
 ## Step 0: Move Files from the `data_tmp` to the `data` Folder
 This step aims to sort all the newly-downloaded model output files in the `data_tmp` folder to follow the structure of the organized `data` folder:
