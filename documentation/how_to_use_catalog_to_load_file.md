@@ -37,7 +37,7 @@ This will be the notebook that you work with the model data. You will be needing
 
 Here, variable `cmip6` is now a pandas dataframe that contains all the information accessed from all CMIP6 files available in the `.../cristi/a/esm_data/cmip6` folder. 
 
-We name the catalogs as '`cesm2_catalog.csv`' and '`cmip6_catalog.csv`' respectively. You can switch out '`cmip6_catalog.csv`' to '`cesm...`' to access the CESM2-output catalog. 
+We name the catalogs as '`cesm2_catalog.csv`' and '`cmip6_catalog.csv`' respectively. You can switch out '`cmip6_catalog.csv`' to '`cesm_catalog.csv`' to access the CESM2-output catalog. 
 
 ## Step 2: Search within the Catalog: 
     path=a.loc[(a['variable_id']=='hur')&  
