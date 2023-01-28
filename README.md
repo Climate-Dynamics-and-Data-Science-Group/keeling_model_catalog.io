@@ -6,7 +6,7 @@
 
 [Loading CMIP or CESM Model Output Files on Keeling with Catalog](documentation/how_to_use_catalog_to_load_file.md)
 
-[Jupyter Notebook Tutorial: Loading Output Files with the Catalog](tutorials/loading_from_catalog.ipynb)
+[**Jupyter Notebook Tutorial**: Loading Output Files with the Catalog](tutorials/loading_from_catalog.ipynb)
 
 ### Downloading CMIP Model Data
 
@@ -17,6 +17,6 @@
 ### Creating A Catalog
 [Creating a Catalog of Model Files on Keeling with Intake-ESM](documentation/create_catalog_with_Intake_ESM_on_Keeling.md)
 
-[Jupyer Notebook Tutorial: Creating a Catalog for CMIP6 output](tutorials/create_catalog_cmip6.ipynb)
+[**Jupyer Notebook Tutorial**: Creating a Catalog for CMIP6 output](tutorials/create_catalog_cmip6.ipynb)
 
-[Jupyter Notebook Tutorial: Creating a Catalog for CESM output](tutorials/create_catalog_cesm.ipynb)
+[**Jupyter Notebook Tutorial**: Creating a Catalog for CESM output](tutorials/create_catalog_cesm.ipynb)
