@@ -269,11 +269,6 @@ Once you found the dataset(s) you needed, you can proceed to download the datase
     
     <br/>
 
-- **Method 2b: Globus Download** (I can't do this either)
-
-
-
-
 
 
     
