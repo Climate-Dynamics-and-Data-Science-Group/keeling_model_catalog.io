@@ -24,7 +24,7 @@ Your goal will be to load either CESM or CMIP6 files available on Cristi's `/a/`
 2. Get their filepaths, and 
 3. Read the files 
 
-Link to the sample Jupyter Notebook: (add link to sample notebook here -> how can I make a jupyter notebook for view only?)
+Link to the sample Jupyter Notebook: [Loading from Catalog](../tutorials/loading_from_catalog.ipynb)
 
 ## Step 0: Start a Jupyter Notebook and import required packages 
 This will be the notebook that you work with the model data. You will be needing `pandas` to **read and search within the catalog**, and `xarray` to view content of the `.nc` files. 
