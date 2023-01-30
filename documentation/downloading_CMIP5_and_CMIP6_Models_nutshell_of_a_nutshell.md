@@ -11,7 +11,7 @@ This is aimed to serve as a quick guide to download global model output. For any
 1. **Login to ESGF-LLNL Node.**
     
     - CMIP5: https://esgf-node.llnl.gov/search/cmip5/
-    - CMIP56: https://esgf-node.llnl.gov/search/cmip6/
+    - CMIP6: https://esgf-node.llnl.gov/search/cmip6/
 
 2. **Identify and Apply Search Conditions**
 3. **Identify Best-suited Download Method**
