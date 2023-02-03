@@ -11,7 +11,7 @@ This is aimed to serve as a quick guide to download global model output. For any
 1. **Login to ESGF-LLNL Node.**
     
     - CMIP5: https://esgf-node.llnl.gov/search/cmip5/
-    - CMIP56: https://esgf-node.llnl.gov/search/cmip6/
+    - CMIP6: https://esgf-node.llnl.gov/search/cmip6/
 
 2. **Identify and Apply Search Conditions**
 3. **Identify Best-suited Download Method**
@@ -26,4 +26,4 @@ This is aimed to serve as a quick guide to download global model output. For any
 2. [IPCC Standard Output from Coupled Ocean-Atmosphere GCMs (Table of variable names)](https://pcmdi.llnl.gov/mips/cmip3/variableList.html)
 3. [CMIP6 Participant Guidance for Modelers](https://pcmdi.llnl.gov/CMIP6/Guide/modelers.html)
 4. [Earth System Documentation(ES-Doc)](https://view.es-doc.org/?renderMethod=id&project=cmip6&id=f83db5ce-af53-4c2e-8cf8-ff4f38e49c3d&version=1&client=esdoc-search)
-
+5. [(CMIP6 Data Only - with Jupyter Notebook Example) Loading CMIP6 Data from Google Cloud by Ryan Abernathey (See 2.)](https://medium.com/pangeo/cmip6-in-the-cloud-five-ways-96b177abe396)

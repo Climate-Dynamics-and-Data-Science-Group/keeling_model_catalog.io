@@ -90,7 +90,7 @@ Once you found the dataset that you want from the results, click '`add to data c
     - [historical](https://view.es-doc.org/index.html?renderMethod=id&project=cmip6&id=713f15b6-e289-44e9-ba74-0d0e827e42ac&version=1)
     - [abrupt-4xCO2](https://view.es-doc.org/index.html?renderMethod=id&project=cmip6&id=b67e8d2f-93fc-41d9-91d8-420eac7b0052&version=1)
 
-    <font size='1'>For other experiments, simply google the experiment name and the terms '`es-doc`' and '`cmip6`' for the documentation.<font size='2'>
+    <font size='1'>For other experiments, simply google the experiment name and the terms `es-doc` and `cmip6` for the documentation.<font size='2'>
     
 3. **What are the variant labels?**
 
@@ -155,7 +155,7 @@ Once you found the dataset that you want from the results, click '`add to data c
         CMIP5 datafiles are bundled together as one Dataset: i.e. There are multiple variables in one `.gn` dataset. You can select multiple model names in one search and get all the needed datasets in a couple searches. 
         
         
-        To select the variables to be downloaded after adding all the datasets to the Data cart, search the variable names in the '`enter text`' box (see Step 3 for details).  
+        To select the variables to be downloaded after adding all the datasets to the Data cart, search the variable names in the `enter text` box (see Step 3 for details).  
         
     - **CMIP6: Select all variables needed for one models in a single search**
 
@@ -188,21 +188,21 @@ Once you found the dataset(s) you needed, you can proceed to download the datase
     ![datacart_cmip5_withsearchapplied](../images/datacart_cmip5_withsearchapplied.png)
 
 
-    In this example, `ts`,`hur`, `uas` and `vas` are selected to download. To check whether the filter is applied, click '`Show Files`' to see if the number of files under the dataset has changed: Only 4 files under the `MPI-ESM-LR` dataset and 7 files from `MRI-CGCM3` will be downloaded, instead of the total 53 and 83 files.
+    In this example, `ts`,`hur`, `uas` and `vas` are selected to download. To check whether the filter is applied, click `Show Files` to see if the number of files under the dataset has changed: Only 4 files under the `MPI-ESM-LR` dataset and 7 files from `MRI-CGCM3` will be downloaded, instead of the total 53 and 83 files.
 
 ## 1. Downloading Batch of Datasets
 
 - **Method 1a: WGET Script Download**
 
-    Go to '`My Data Cart`'. There should be all the datasets that you selected from the filter search from Step 2.   
+    Go to `My Data Cart`. There should be all the datasets that you selected from the filter search from Step 2.   
 
     ![datacart_cmip6](https://drive.google.com/file/d/1FHDLAgpa1QDlEKMCXcXSTq-C07Rr17DU/view?usp=share_link)
 
-    Click '`Select All Datasets`', then click '`WGET Script`' under '`Collective Services for All Selected Datasets`'. You will see links to download the WGET script. The number of script links depends on the amount of nodes the datasets are downloaded from. In this example, not all datasets are available in the LLNL-ESGF node, and replicas from the AU and UK nodes are selected. Therefore, datasets will be acquired from all LLNL-ESGF, AU-ESGF and UK-ESGF nodes, so we'll need to download total of three scripts. 
+    Click `Select All Datasets`, then click `WGET Script` under `Collective Services for All Selected Datasets`. You will see links to download the WGET script. The number of script links depends on the amount of nodes the datasets are downloaded from. In this example, not all datasets are available in the LLNL-ESGF node, and replicas from the AU and UK nodes are selected. Therefore, datasets will be acquired from all LLNL-ESGF, AU-ESGF and UK-ESGF nodes, so we'll need to download total of three scripts. 
     
     ![wgetscripts](../images/wgetscripts.png)
 
-    When you click the link, you may see the information not secure page. Click '`Send anyways`'. 
+    When you click the link, you may see the information not secure page. Click `Send anyways`. 
 
     ![notsecure](../images/notsecure.png)
 
@@ -237,7 +237,7 @@ Once you found the dataset(s) you needed, you can proceed to download the datase
 
     ![globus_keeling](../images/globus_keeling.png)
 
-    You will then see your Keeling account. Select the file destination on Keeling, then click '`Submit`'.  
+    You will then see your Keeling account. Select the file destination on Keeling, then click `Submit`.  
 
     ![globus_keeling_destination](../images/globus_keeling_destination.png)
 
@@ -253,7 +253,7 @@ Once you found the dataset(s) you needed, you can proceed to download the datase
 
     **II. Download Python Script**
     
-    Click '`Start Script Download`' in Option 2. The `.py` will then download to your local computer. Similar to `WGET Script`, upload the python script to Keeling and run it as a regular python script. Then use `mv` to move the files to the destined folder. 
+    Click `Start Script Download` in Option 2. The `.py` will then download to your local computer. Similar to `WGET Script`, upload the python script to Keeling and run it as a regular python script. Then use `mv` to move the files to the destined folder. 
 
 ## 2. Downloading a Single Variable `.nc` File
 > If you are trying to download a single variable, but the number of files != 1, it is highly recommended to use the methods mentioned in `1. Downloading multiple datasets`. 
@@ -268,11 +268,6 @@ Once you found the dataset(s) you needed, you can proceed to download the datase
     Click HTTP Download, and the file should be downloaded to your local computer. Use `scp` to upload the file to Keeling from your local terminal.
     
     <br/>
-
-- **Method 2b: Globus Download** (I can't do this either)
-
-
-
 
 
 

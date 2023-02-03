@@ -14,6 +14,8 @@
 
 [Downloading CMIP5/6 Models Datasets from ESGF (in a Nutshell)](documentation/downloading_CMIP5_and_CMIP6_Models_nutshell_of_a_nutshell.md)
 
+[Loading CMIP6 Model Data from Google Cloud by Ryan Abernathey (Step 2) with Jypyter Notebook Tutorial](https://medium.com/pangeo/cmip6-in-the-cloud-five-ways-96b177abe396)
+
 ### Creating A Catalog
 [Creating a Catalog of Model Files on Keeling with Intake-ESM](documentation/create_catalog_with_Intake_ESM_on_Keeling.md)
 
