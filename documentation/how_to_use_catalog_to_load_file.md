@@ -33,7 +33,7 @@ This will be the notebook that you work with the model data. You will be needing
     import xarray as xr
 
 ## Step 1: Load the Catalog 
-    cmip6=pd.read_csv('cmip6_catalog.csv')
+    a=pd.read_csv('/data/keeling/a/cristi/a/esm_data/cmip6_catalog.csv')
 
 Here, variable `cmip6` is now a pandas dataframe that contains all the information accessed from all CMIP6 files available in the `.../cristi/a/esm_data/cmip6` folder. 
 
