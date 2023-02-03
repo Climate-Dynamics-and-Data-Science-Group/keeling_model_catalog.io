@@ -36,18 +36,18 @@ It is required to have following packages installed.
 - Install [`intake`](https://intake-esm.readthedocs.io/en/stable/how-to/install-intake-esm.html)
 
 ## Introduction 
-The main goal of doing this step is to update the existing catalog with the newly downloaded files that are rearranged in the organized folders (e.g. `./cmip6/` and `./cesm2/`). It is most likely that there are new folders created to store the newly downloaded datasets, for example, model output for a new member of an exisiting model is downloaded; or, datasets of a new model is downloaded. 
+The main goal of doing this step is to update the existing catalog with the newly downloaded files that are rearranged in the organized folders (e.g. `./cmip6/` and `./cesm/`). It is most likely that there are new folders created to store the newly downloaded datasets, for example, model output for a new member of an exisiting model is downloaded; or, datasets of a new model is downloaded. 
 
 Therefore, we would have to 
 
-0. **Organize the newly-downloaded files from the `data_tmp` folder and move them to the `data` folder** 
+0. **Organize the newly-downloaded files from the `data_tmp` folder and move them to the `esm_data` folder** 
 1. **Get the most recent list of all subdirectories in the root folder (`cesm2` or `cmip6`)**
 2. **Load the list into a Jupyter Notebook**
 3. **Create the Catalog Builder and Build the Catalog**
 4. **Check and Save the new Catalog**
 
-## Step 0: Move Files from the `data_tmp` to the `data` Folder
-This step aims to sort all the newly-downloaded model output files in the `data_tmp` folder to follow the structure of the organized `data` folder:
+## Step 0: Move Files from the `data_tmp` to the `esm_data` Folder
+This step aims to sort all the newly-downloaded model output files in the `data_tmp` folder to follow the structure of the organized `esm_data` folder:
 
 >root path/model/experiment/member
 
