@@ -1,6 +1,6 @@
 # Load CMIP or CESM Model Output Files on Keeling with Catalog
 
-This tutorial is specifically for users who will use the File Catalog for either CMIP6 or CESM2 output. 
+This tutorial is specifically for users who will use the File Catalog for either CMIP6 or CESM output. 
 
 You should be able to access the catalogs nested in `/data/keeling/a/cristi` directory, but the full path are as follow: 
 
@@ -37,7 +37,7 @@ This will be the notebook that you work with the model data. You will be needing
 
 Here, variable `cmip6` is now a pandas dataframe that contains all the information accessed from all CMIP6 files available in the `.../cristi/a/esm_data/cmip6` folder. 
 
-We name the catalogs as '`cesm2_catalog.csv`' and '`cmip6_catalog.csv`' respectively. You can switch out '`cmip6_catalog.csv`' to '`cesm_catalog.csv`' to access the CESM2-output catalog. 
+We name the catalogs as '`cesm_catalog.csv`' and '`cmip6_catalog.csv`' respectively. You can switch out '`cmip6_catalog.csv`' to '`cesm_catalog.csv`' to access the CESM-output catalog. 
 
 ## Step 2: Search within the Catalog: 
     path=a.loc[(a['variable_id']=='hur')&  
@@ -55,7 +55,7 @@ Here there are four conditions applied to filter the dataframe:
 
 These are the common search keys (i.e. pandas dataframe columns) you will use. However, there are more keys available, and you can check all of them by the follow: 
 
-    cmip6.columns
+    a.columns
 
 After narrowing down the range to all AMIP experiment relative humidity files from the GFDL models in this example, we will get the filepaths of those chosen files by calling `['path']`. We will have to change the object type to `list` instead of a `numpy array` before reading the files with Xarray. 
 
