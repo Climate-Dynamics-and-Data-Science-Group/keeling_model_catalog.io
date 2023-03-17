@@ -36,3 +36,28 @@ project or model highlighted. This may help simplify your search.
 ### Method 1c: Using the Search tab
 
 ![The search tab](../images/searchtab_screen.png)
+
+You can also use the filters on the left in order to find the specific model data you need.
+This separates the data by:
+ - **Project**
+   - e.g. CMIP5, ALASKA_WRF, CESM
+ - **Institute**
+   - e.g. NCAR, NASA-GMAO
+ - **Model**
+   - e.g. CESM, CanCM3
+ - **Experiment** 
+   - e.g. 19790101, 19790201
+ - **Frequency**
+   - e.g. Daily, 3-Hourly, Annual Average
+ - **Product**
+   - e.g. hist, proc, verif
+ - **Realm**
+   - e.g. aerosol, atmos, land
+ - **CF Variable**
+   - e.g. 10-m wind, HDO snow ice
+ - **Variable Name**
+   - e.g. a2x1d_Faxa_dstwet2
+ - **Ensemble**
+   - e.g. r0i0p0, r13i1p1
+ - **Publisher**
+   - e.g. UCAR/NCAR
