@@ -1,5 +1,7 @@
 # Downloading CESM Data from the NCAR Website
 
+(Work in progress!)
+
 This tutorial will go through the different steps of downloading CESM data on to Keeling from the NCAR website. This tutorial is fairly similar to the one used to [download CMIP5 and CMIP6 data](./downloading_CMIP5_and_CMIP6_Models_.nc_Files_from_ESGF.md), although a little simpler.
 
 Publicly available datasets like the CESM large ensemble and the CESM1 last millenium ensemble can be accessed [here](https://www.earthsystemgrid.org/), which is where our tutorial will start.
@@ -22,9 +24,28 @@ There's several different ways to access the different datasets on earthsystemgr
 
 ![Homepage](../images/homepage_search.png)
 
-The homepage has several key NCAR projects that you may want to look into before doing a detailed search. Clicking on one of those links will take you to a page that details specifics
+The search tab doesn't contain many key datasets, so you may want to start your search at the homepage.
+
+The homepage has several NCAR projects like the CESM large ensemble (CESM-LE) that you may want to look into before doing a detailed search. Clicking on one of those links will take you to a page that details specifics
 about the project, contact information, related articles, and more. You'll also be typically given either child datasets to look at and download, or a button that will take you to 
 download options.
+
+Some data may require further authorization or special permissions in order to access or download them.
+
+#### Addendum: CESM Large Ensemble Data Variables
+When listed on the website under the child datasets for CESM-LE, the variables are often undescribed and left in their shortened form, creating some confusion.
+
+![CESM-LE Variables](../images/cesmlevariables.png)
+
+In order to figure out what each variable is, go to the [Datasets Available to the Community](https://www.cesm.ucar.edu/community-projects/lens/data-sets) page on NCAR's website. You can search for the variable you would like at the bottom of the page.
+
+![CESM-LE Variable search](../imagees/ncarvariablesearch.png)
+
+By looking for precipitation, for example, you can find if there's data for the specific time frequency you need, what the stream name is, what the shortened variable name is, the units, and other information that can help you with your search.
+
+After searching back on the earthsystemgrid website for the specific dataset you need, you can go ahead and click on Download Options to continue.
+
+![After clicking on the link for PRECL data](../images/precipitationdata.png)
 
 ### Method 1b: Searching through the Projects tab
 
@@ -61,3 +82,7 @@ This separates the data by:
    - e.g. r0i0p0, r13i1p1
  - **Publisher**
    - e.g. UCAR/NCAR
+
+# Step 2: Download Data
+
+After successfully 
