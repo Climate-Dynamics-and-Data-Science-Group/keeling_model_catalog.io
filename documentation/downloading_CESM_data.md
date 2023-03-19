@@ -83,6 +83,34 @@ This separates the data by:
  - **Publisher**
    - e.g. UCAR/NCAR
 
+#### Addendum: CESM data labeling
+
+CESM data labeling follows a very specific format, which can be hard to parse at first but can help you find the specific datasets you need.
+
+Example File: **b.e11.B1850C5CN.f09_g16.005.cam.h0.OMEGA.040001-049912.nc**
+
+Each part of the label is separated by periods.
+- Component set: the specific set of CESM models and type of simulation done
+  - e.g. b (full model), f (atmosphere only)
+- Code base
+  - e.g. e11, e20
+- Full component set: Simulation specifics
+  - e.g. B1850C5CN (1850 preindustrial control in B compset), B20TRC5CNBDRD (historical simulation in B compset)
+- Resolution
+  - e.g. f09_g16, f09_f09
+- Experiment number
+  - e.g. 001, 035, 101
+- Model data variable: The specific model that the variable pertains to
+  - e.g. cam (atmosphere), pop (ocean)
+- Historical file indicator
+  - e.g. h0, h1
+- Variable name
+  - e.g. OMEGA (vertical upwards motion), TREFHT (temperature reference height), TS (surface temperature)
+- Simulation time: format yyyymm
+  - e.g. 040001-049912 (Simulation from year 400 to year 500 for a given experiment), 192001-202912 (1920-2030 simulation)
+- File type
+  - Typically nc (netCDF file)
+  
 # Step 2: Download Data
 
-After successfully 
+After successfully selecting the data you'd like to download, 
