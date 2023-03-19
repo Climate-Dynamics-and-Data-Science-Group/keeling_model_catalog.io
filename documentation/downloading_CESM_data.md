@@ -10,9 +10,11 @@ Publicly available datasets like the CESM large ensemble and the CESM1 last mill
 
 ## Step 0: Create an NCAR Account (You can skip if you already have one)
 
-Click on the Sign in button on the top right of the home screen. You'll be asked if you want to sign in with ORCid,..., or create an NCAR account. 
+Click on the Sign in button on the top right of the home screen. You'll be asked if you want to sign in with ORCid, UCAR CIT, or create an NCAR account. 
 
-ORCid has had issues in the past, so it would be suggested to use an NCAR account, since it's fairly simple to set up. 
+![Signing in](../images/signin.png)
+
+I've had issues with using ORCid to access earthsystemgrid.org in the past, so it would be suggested to use an NCAR account, since it's fairly simple to set up. 
 
 After creating an account, you can sign in and start downloading data!
 
@@ -113,4 +115,12 @@ Each part of the label is separated by periods.
   
 # Step 2: Download Data
 
-After successfully selecting the data you'd like to download, 
+After successfully selecting the data you'd like to download, click either "Download Selected" or "Download Options for Selection". This should take you to a page that looks like the below:
+
+![Download Options](../images/downloadoptions.png)
+
+Click "Download Wget Script", which should bring up a popup to save a wget script.
+
+Download this file onto your computer, and then scp it on to keeling
+
+`scp wget...`
