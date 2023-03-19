@@ -39,7 +39,7 @@ When listed on the website under the child datasets for CESM-LE, the variables a
 
 In order to figure out what each variable is, go to the [Datasets Available to the Community](https://www.cesm.ucar.edu/community-projects/lens/data-sets) page on NCAR's website. You can search for the variable you would like at the bottom of the page.
 
-![CESM-LE Variable search](../imagees/ncarvariablesearch.png)
+![CESM-LE Variable search](../images/ncarvariablesearch.png)
 
 By looking for precipitation, for example, you can find if there's data for the specific time frequency you need, what the stream name is, what the shortened variable name is, the units, and other information that can help you with your search.
 
