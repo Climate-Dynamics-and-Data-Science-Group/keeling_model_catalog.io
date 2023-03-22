@@ -121,6 +121,10 @@ After successfully selecting the data you'd like to download, click either "Down
 
 Click "Download Wget Script", which should bring up a popup to save a wget script.
 
-Download this file onto your computer, and then scp it on to keeling
+Download this file onto your computer, and then scp it on to keeling in the repository where you'd like the data to be.
 
 `scp wget...`
+
+Run the script, and the data should start downloading!
+
+`bash wget....`
