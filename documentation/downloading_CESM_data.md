@@ -123,8 +123,9 @@ Click "Download Wget Script", which should bring up a popup to save a wget scrip
 
 Download this file onto your computer, and then scp it on to keeling in the repository where you'd like the data to be.
 
-`scp wget...`
+Here, I'll be putting the wget script into data_tmp.
+`scp wget-ucar.cgd.ccsm4.cesmLE.atm.proc.monthly_ave.PRECC-20230323T1624Z.sh mailes2@keeling.earth.illinois.edu:/data/keeling/a/cristi/a/data_tmp/LENS`
 
 Run the script, and the data should start downloading!
 
-`bash wget....`
+`bash wget-ucar.cgd.ccsm4.cesmLE.atm.proc.monthly_ave.PRECC-20230323T1624Z.sh `
