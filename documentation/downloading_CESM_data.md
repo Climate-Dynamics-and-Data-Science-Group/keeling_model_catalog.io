@@ -130,3 +130,24 @@ Here, I'll be putting the wget script into data_tmp.
 Run the script, and the data should start downloading!
 
 `bash wget-ucar.cgd.ccsm4.cesmLE.atm.proc.monthly_ave.PRECC-20230323T1624Z.sh `
+
+The print statements should look something like this:
+
+```
+b.e11.B20TRC5CNBDRD.f09_g16.107.cam.h0.PRECC.192001-200512.nc ...Downloading
+--2023-03-27 15:33:04--  https://tds.ucar.edu/thredds/fileServer/datazone/campaign/cesm/collections/cesmLE/CESM-CAM5-BGC-LE/atm/proc/tseries/monthly/PRECC/b.e11.B20TRC5CNBDRD.f09_g16.107.cam.h0.PRECC.192001-200512.nc?api-token=HRRVNbbbSBMLxqlNBO9vEdDh66JqChEOCV1MZ8Uc
+Resolving tds.ucar.edu (tds.ucar.edu)... 128.117.181.7
+Connecting to tds.ucar.edu (tds.ucar.edu)|128.117.181.7|:443... connected.
+HTTP request sent, awaiting response... 200
+Length: 141309793 (135M) [application/x-netcdf]
+Saving to: 'b.e11.B20TRC5CNBDRD.f09_g16.107.cam.h0.PRECC.192001-200512.nc'
+
+100%[=============================================>] 141,309,793 48.6MB/s   in 2.8s
+
+2023-03-27 15:33:07 (48.6 MB/s) - 'b.e11.B20TRC5CNBDRD.f09_g16.107.cam.h0.PRECC.192001-200512.nc' saved [141309793/141309793]
+
+Can't verify checksum.
+   ok. done!
+```
+
+![Downloaded data](../images/downloadeddata.png)
