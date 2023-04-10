@@ -14,7 +14,7 @@
 
 [Downloading CMIP5/6 Models Datasets from ESGF (in a Nutshell)](documentation/downloading_CMIP5_and_CMIP6_Models_nutshell_of_a_nutshell.md)
 
-[Loading CMIP6 Model Data from Google Cloud by Ryan Abernathey (Step 2) with Jypyter Notebook Tutorial](https://medium.com/pangeo/cmip6-in-the-cloud-five-ways-96b177abe396)
+[Loading CMIP6 Model Data from Google Cloud by Ryan Abernathey (Step 2) with Jupyter Notebook Tutorial](https://medium.com/pangeo/cmip6-in-the-cloud-five-ways-96b177abe396)
 
 [Downloading CESM-LE Data](documentation/downloading_CESM_data.md)
 ### Creating A Catalog
