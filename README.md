@@ -20,6 +20,6 @@
 ### Creating A Catalog
 [Creating a Catalog of Model Files on Keeling with Intake-ESM](documentation/create_catalog_with_Intake_ESM_on_Keeling.md)
 
-[**Jupyer Notebook Tutorial**: Creating a Catalog for CMIP6 output](tutorials/create_catalog_cmip6.ipynb)
+[**Jupyter Notebook Tutorial**: Creating a Catalog for CMIP6 output](tutorials/create_catalog_cmip6.ipynb)
 
 [**Jupyter Notebook Tutorial**: Creating a Catalog for CESM output](tutorials/create_catalog_cesm.ipynb)
