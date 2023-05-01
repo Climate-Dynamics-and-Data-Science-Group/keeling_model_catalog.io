@@ -16,7 +16,10 @@
 
 [Loading CMIP6 Model Data from Google Cloud by Ryan Abernathey (Step 2) with Jupyter Notebook Tutorial](https://medium.com/pangeo/cmip6-in-the-cloud-five-ways-96b177abe396)
 
+### Downloading CESM Output Data
+
 [Downloading CESM-LE Data](documentation/downloading_CESM_data.md)
+
 ### Creating A Catalog
 [Creating a Catalog of Model Files on Keeling with Intake-ESM](documentation/create_catalog_with_Intake_ESM_on_Keeling.md)
 
