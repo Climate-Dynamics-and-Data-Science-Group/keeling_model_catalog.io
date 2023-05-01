@@ -17,7 +17,8 @@ You do not need to do the organizing manually, as the notebook will sort files i
 
 Links to the sample Jupyter Notebook: 
 
-- CESM: [Here](../tutorials/create_catalog_cesm.ipynb)
+- CESM_LME: [Here](../tutorials/create_catalog_cesmlme.ipynb)
+- CESM_LENS: [Here](../tutorials/create_catalog_cesmlens.ipynb)
 - CMIP6: [Here](../tutorials/create_catalog_cmip6.ipynb)
 
 >Make sure you are referring to the correct notebook when building the catalog. 
@@ -173,3 +174,5 @@ And now you are done!
 ## Resources 
 1. [Intake_ESM page](https://intake-esm.readthedocs.io/en/stable/how-to/build-a-catalog-from-timeseries-files.html)
 2. [ECGtools (Changing Parsers)](https://ecgtools.readthedocs.io/en/latest/how-to/use-a-custom-parser.html)
+3. [CESM1.2 Compset Conventions](https://www2.cesm.ucar.edu/models/cesm1.2/cesm/doc/modelnl/compsets.html)
+4. [CESM2 Compset Conventions](https://www2.cesm.ucar.edu/models/cesm2/config/compsets.html)
