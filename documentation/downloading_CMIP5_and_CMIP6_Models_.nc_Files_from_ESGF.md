@@ -78,7 +78,7 @@ Once you found the dataset that you want from the results, click '`add to data c
     
     If you are trying to replicate the results from a published paper, choose the identical ones from the list of specific models they use in the supplementary information (or reach out to the authors for their list of models). 
 
-    Otherwise, go for the one with the most serach result in the database, as indicated by the numbers followed by the model name in the filter box. (TB-revised)
+    Otherwise, go for the one with the most search result in the database, as indicated by the numbers followed by the model name in the filter box. (TB-revised)
 
 2. **Which experiment should I choose?**
 
@@ -116,11 +116,11 @@ Once you found the dataset that you want from the results, click '`add to data c
         
         It is possible that the LLNL ESGF node doesn't have the file that you are looking for. By clicking show all replicas, file of the same name from other data nodes like the one in UK (`esgf.ceda.ac.uk`),or AU (`esgf.nci.org.au`) will show. 
         
-        If there are more than one identical results, cross check if they are the identical, then simply select the one that matches with what you are looking for. 
+        If there are more than one identical results, cross check if they are the identical (e.g. total number of files and version) , then simply select the one that matches with what you are looking for. 
      
      2. Relax your search conditions. 
         
-        These following may not be labelled to the targetted files, and thus may not show when doing the search. (They are also less critical to pinpoint the targetted files.)
+        These following may not be labeled to the targetted files, and thus may not show when doing the search. (They are also less critical to pinpoint the targetted files.)
 
         - **Table ID**: Remove the Table ID. 
         - **Frequency**: Remove Frequency (e.g. mon). 
